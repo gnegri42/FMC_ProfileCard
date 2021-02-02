@@ -4,8 +4,12 @@
     background-image:
         url(../images/bg-pattern-top.svg),
         url(../images/bg-pattern-bottom.svg);
-        background-position: top calc(50% - 350px) left calc(50% - 350px),
-                                top calc(50% + 350px) left calc(50% + 350px);
+        // NEW WAY TO POSITION
+        background-position: right 50vw bottom 50vh, 
+                            left 50vw top 50vh;
+        // OLD WAY
+        // background-position: top calc(50% - 350px) left calc(50% - 350px),
+        //                         top calc(50% + 350px) left calc(50% + 350px);
         background-size: contain;
         background-repeat: no-repeat;
 }
