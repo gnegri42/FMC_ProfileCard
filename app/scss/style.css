@@ -56,8 +56,9 @@ strong {
 .main {
   height: 100vh;
   background-color: #19a2ae;
-  background-image: url(../images/bg-pattern-top.svg);
-  background-position: top 50% left -50%;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-position: top calc(50% - 350px) left calc(50% - 350px), top calc(50% + 350px) left calc(50% + 350px);
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -108,7 +109,7 @@ strong {
 }
 
 .card__stats {
-  border-top: 1px solid #969696;
+  border-top: 2px solid #f2f2f2;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
